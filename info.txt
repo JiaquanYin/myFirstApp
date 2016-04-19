@@ -1,3 +1,9 @@
+Node version: v4.4.2
+
+Cordova version: 6.1.1
+
+Config.xml file: 
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.myfirstapp815868" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>myFirstApp</name>
@@ -68,3 +74,49 @@
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
 </widget>
+
+Plugins: 
+
+cordova-plugin-camera,cordova-plugin-console,cordova-plugin-device,cordova-plugin-splashscreen,cordova-plugin-statusbar,cordova-plugin-whitelist,ionic-plugin-keyboard
+
+Android platform:
+
+Available Android targets:
+----------
+id: 1 or "android-14"
+     Name: Android 4.0
+     Type: Platform
+     API level: 14
+     Revision: 4
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800
+ Tag/ABIs : no ABIs.
+----------
+id: 2 or "android-22"
+     Name: Android 5.1.1
+     Type: Platform
+     API level: 22
+     Revision: 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : no ABIs.
+----------
+id: 3 or "android-23"
+     Name: Android 6.0
+     Type: Platform
+     API level: 23
+     Revision: 3
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : no ABIs.
+----------
+id: 4 or "android-N"
+     Name: Android N (Preview)
+     Type: Platform
+     API level: N
+     Revision: 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : no ABIs.
+
+iOS platform:
+
+Xcode 7.1.1
+Build version 7B1005
+
