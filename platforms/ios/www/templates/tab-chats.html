@@ -1,0 +1,28 @@
+<ion-view view-title="微信">
+  <ion-nav-buttons side="secondary">
+    <button class="button">
+      <i class="icon ion-plus"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content start-y="57">
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+    <ion-list>
+      <label class="item item-input item-icon-right" style="margin: 5px;">
+        <input type="text" placeholder="Search" ng-model="searchContent">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+      </label>
+      <ion-item class="item-remove-animate item-avatar" ng-repeat="chat in chats|filter:searchContent" type="item-text-wrap" href="#/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}" style="border-radius:15%">
+        <h2 style="width: 100%;">{{chat.name}}<span style="margin-right: 5px;text-align: right;">{{chat.lastTime}}</span></h2>
+        <p>{{chat.lastText}}</p>
+        <span class="right-corner-time">{{chat.lastTime}}</span>
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+      <ion-item>
+        <button class="button button-block button-balanced" ng-click="testQ()">测试$q</button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
