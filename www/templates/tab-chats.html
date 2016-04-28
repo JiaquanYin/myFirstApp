@@ -24,5 +24,9 @@
         <button class="button button-block button-balanced" ng-click="testQ()">测试$q</button>
       </ion-item>
     </ion-list>
+    <ion-infinite-scroll
+          on-infinite="doRefresh()"
+          distance="1%">
+    </ion-infinite-scroll>
   </ion-content>
 </ion-view>
